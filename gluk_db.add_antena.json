@@ -1,0 +1,248 @@
+[{
+  "_id": {
+    "$oid": "66f54d5973083c5a7eda3c58"
+  },
+  "antena_description": "First antenna not matched",
+  "antena_id": "1",
+  "antena_name": "ANT001"
+},
+{
+  "_id": {
+    "$oid": "66f54d8673083c5a7eda3c59"
+  },
+  "antena_description": "Antenna matched to 24.5Ghz",
+  "antena_id": "2",
+  "antena_name": "ANT002-24.5Ghz"
+},
+{
+  "_id": {
+    "$oid": "66f54d9073083c5a7eda3c5a"
+  },
+  "antena_description": "Antenna matched to 23Ghz",
+  "antena_id": "3",
+  "antena_name": "ANT002-23Ghz"
+},
+{
+  "_id": {
+    "$oid": "66f54dfd73083c5a7eda3c5b"
+  },
+  "antena_description": "Antenna matched to 22Ghz",
+  "antena_id": "5",
+  "antena_name": "ANT002-22Ghz"
+},
+{
+  "_id": {
+    "$oid": "66f54e0873083c5a7eda3c5c"
+  },
+  "antena_description": "Antenna matched to 26Ghz",
+  "antena_id": "4",
+  "antena_name": "ANT002-26Ghz"
+},
+{
+  "_id": {
+    "$oid": "670bc229d20113b69a2e2a51"
+  },
+  "antena_description": "First antenna, not designed for a specific frequency. Perylene coating.",
+  "antena_id": "0",
+  "antena_name": "ANT-001_P"
+},
+{
+  "_id": {
+    "$oid": "67162cf9d20113b69a2e2b11"
+  },
+  "antena_description": "Antenna matched to 21Ghz",
+  "antena_id": "6",
+  "antena_name": "ANT002-21Ghz"
+},
+{
+  "_id": {
+    "$oid": "67174fb4d20113b69a2e2b42"
+  },
+  "antena_description": "Based on the 23Ghz antenna with coating done by Geri, applied by hand, with minimum thickness",
+  "antena_id": "10",
+  "antena_name": "ANT002-23Ghz-Geri_Thin_LAC"
+},
+{
+  "_id": {
+    "$oid": "67175008d20113b69a2e2b43"
+  },
+  "antena_description": "Based on the 23Ghz antenna with coating done by Geri, applied by hand, with medium thickness",
+  "antena_id": "11",
+  "antena_name": "ANT002-23Ghz-Geri_Mid_LAC"
+},
+{
+  "_id": {
+    "$oid": "67175020d20113b69a2e2b44"
+  },
+  "antena_description": "Based on the 23Ghz antenna with coating done by Geri, applied by hand, with maximum thickness",
+  "antena_id": "12",
+  "antena_name": "ANT002-23Ghz-Geri_Thick_LAC"
+},
+{
+  "_id": {
+    "$oid": "672b5890a11c01df3201592f"
+  },
+  "antena_description": "23Ghz with Ami's coating 8%",
+  "antena_id": "7",
+  "antena_name": "ANT002-23Ghz-Ami_A1"
+},
+{
+  "_id": {
+    "$oid": "6731eb61a11c01df3201595d"
+  },
+  "antena_description": "Antenna matched to 20Ghz",
+  "antena_id": "8",
+  "antena_name": "ANT002-20Ghz"
+},
+{
+  "_id": {
+    "$oid": "67333c94a11c01df3201597e"
+  },
+  "antena_description": "Antenna matched to 27Ghz",
+  "antena_id": "9",
+  "antena_name": "ANT002-27Ghz"
+},
+{
+  "_id": {
+    "$oid": "67a9c66d67d4aa6b1858cba7"
+  },
+  "antena_description": "23Ghz with Ami's coating, Spinner, 10um",
+  "antena_id": "10",
+  "antena_name": "ANT002-23Ghz-Ami_S10U"
+},
+{
+  "_id": {
+    "$oid": "686e0dc50ca64fea455bc45d"
+  },
+  "antena_description": "Wide band antenna (Albert) SF2V",
+  "antena_id": "13",
+  "antena_name": "ANT003-SF2V"
+},
+{
+  "_id": {
+    "$oid": "687dd92c0ca64fea455bc507"
+  },
+  "antena_description": "Wide band antenna (Albert) SF1V",
+  "antena_id": "14",
+  "antena_name": "ANT003-SF1V"
+},
+{
+  "_id": {
+    "$oid": "6881ce36d36a6a7435c1ae5c"
+  },
+  "antena_description": "Wide band antenna (Albert) SF3AV",
+  "antena_id": "15",
+  "antena_name": "ANT003-SF3AV"
+},
+{
+  "_id": {
+    "$oid": "6889b8e7d36a6a7435c1aefc"
+  },
+  "antena_description": "Wide band antenna (Albert) SF4V rotation 90 deg",
+  "antena_id": "16",
+  "antena_name": "ANT003-SF4V-90"
+},
+{
+  "_id": {
+    "$oid": "688f63243d810d3cfca6849b"
+  },
+  "antena_description": "\"Wide band antenna (Albert) DM2 split ring\"",
+  "antena_id": "17",
+  "antena_name": "ANT003-DM2"
+},
+{
+  "_id": {
+    "$oid": "6890b342551fef1e50275cf2"
+  },
+  "antena_description": "Wide band antenna (Albert) DM2 split ring 3",
+  "antena_id": "18",
+  "antena_name": "ANT003-DM3"
+},
+{
+  "_id": {
+    "$oid": "6899d9e5551fef1e50275d97"
+  },
+  "antena_description": "Wide band antenna (Albert) SF3A",
+  "antena_id": "20",
+  "antena_name": "ANT003-SF3A"
+},
+{
+  "_id": {
+    "$oid": "689c25de551fef1e50275e39"
+  },
+  "antena_description": "Wide band antenna (Albert) D1A",
+  "antena_id": "21",
+  "antena_name": "ANT003-D1A"
+},
+{
+  "_id": {
+    "$oid": "68a173873f7536e02d844b8e"
+  },
+  "antena_description": "Wide band antenna (Albert) S3V",
+  "antena_id": "22",
+  "antena_name": "ANT003-S3V"
+},
+{
+  "_id": {
+    "$oid": "68a2c0493f7536e02d844c21"
+  },
+  "antena_description": "Wide band antenna (Albert) SF1",
+  "antena_id": "23",
+  "antena_name": "ANT003-SF1"
+},
+{
+  "_id": {
+    "$oid": "68a454c6c20c04020d3298f5"
+  },
+  "antena_description": "Wide band antenna (Albert) SF4",
+  "antena_id": "24",
+  "antena_name": "ANT003-SF4"
+},
+{
+  "_id": {
+    "$oid": "68a4550cc20c04020d3298f6"
+  },
+  "antena_description": "Wide band antenna (Albert) SF4 90 degrees",
+  "antena_id": "25",
+  "antena_name": "ANT003-SF4-90"
+},
+{
+  "_id": {
+    "$oid": "68b3e6ebc466f80be51e8082"
+  },
+  "antena_description": "Wide band antenna (Albert) S4",
+  "antena_id": "26",
+  "antena_name": "ANT003-S4"
+},
+{
+  "_id": {
+    "$oid": "68b686fac59c72ccc3db21c0"
+  },
+  "antena_description": "Wide band antenna (Albert) S4V",
+  "antena_id": "27",
+  "antena_name": "ANT003-S4V"
+},
+{
+  "_id": {
+    "$oid": "68bfc665c59c72ccc3db226c"
+  },
+  "antena_description": "Wide band antenna (Albert) S2",
+  "antena_id": "28",
+  "antena_name": "ANT003-S2"
+},
+{
+  "_id": {
+    "$oid": "68c11577c59c72ccc3db2328"
+  },
+  "antena_description": "Wide band antenna (Albert) S1V",
+  "antena_id": "29",
+  "antena_name": "ANT003-S1V"
+},
+{
+  "_id": {
+    "$oid": "68c6d8f2c59c72ccc3db23a1"
+  },
+  "antena_description": "Wide band antenna (Albert) S2V",
+  "antena_id": "30",
+  "antena_name": "ANT003-S2V"
+}]

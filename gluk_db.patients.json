@@ -1,0 +1,195 @@
+[{
+  "_id": {
+    "$oid": "66e980c18eb94147dc9d4539"
+  },
+  "address": "Sderot Menachem begin 7/6 ",
+  "age": "41",
+  "city": "Tirat Carmel ",
+  "country": "Israel ",
+  "firstName": "David",
+  "gender": "male",
+  "lastName": "Yachnis",
+  "patient_id": "310302971",
+  "phoneNumber": "0534277838",
+  "zipCode": "12345678"
+},
+{
+  "_id": {
+    "$oid": "66f54f3473083c5a7eda3c5d"
+  },
+  "address": "12 Zohar st",
+  "age": "59",
+  "city": "Haifa",
+  "country": "Israel",
+  "firstName": "Einan",
+  "gender": "male",
+  "lastName": "Regev",
+  "patient_id": "0525786133",
+  "phoneNumber": "0525786133",
+  "zipCode": "3540236"
+},
+{
+  "_id": {
+    "$oid": "6721e80fd20113b69a2e2bf4"
+  },
+  "address": "Kibutz Afek",
+  "age": "38",
+  "city": "Kibutz Afek",
+  "country": "Israel",
+  "firstName": "Dia",
+  "gender": "female",
+  "lastName": "Mellamed",
+  "patient_id": "038189916",
+  "phoneNumber": "0523393226",
+  "zipCode": "3004200"
+},
+{
+  "_id": {
+    "$oid": "6721eff6d20113b69a2e2bfb"
+  },
+  "address": "Modiin",
+  "age": "22",
+  "city": "Modiin",
+  "country": "Israel",
+  "firstName": "Hana",
+  "gender": "female",
+  "lastName": "Shvartzer",
+  "patient_id": "0585739328",
+  "phoneNumber": "0585739328",
+  "zipCode": "00000"
+},
+{
+  "_id": {
+    "$oid": "6721f4c0d20113b69a2e2c03"
+  },
+  "address": "Afek",
+  "age": "42",
+  "city": "Afek",
+  "country": "Israel",
+  "firstName": "Assaf",
+  "gender": "male",
+  "lastName": "Leibovitz",
+  "patient_id": "060471380",
+  "phoneNumber": "0542219127",
+  "zipCode": "3004200"
+},
+{
+  "_id": {
+    "$oid": "6729c801a11c01df320158ee"
+  },
+  "YearOfBirth": "1980",
+  "address": "Mendele 6",
+  "city": "Kiryat Ata ",
+  "country": "Israel",
+  "firstName": "Yaarit",
+  "gender": "female",
+  "lastName": "Choen",
+  "patient_id": "029971504",
+  "phoneNumber": "0542220473",
+  "zipCode": "1223"
+},
+{
+  "_id": {
+    "$oid": "6788af872068429e4a1a0b6d"
+  },
+  "YearOfBirth": "1998",
+  "address": "Tabenkin 69",
+  "city": "Haifa",
+  "country": "Israel",
+  "firstName": "Arseniy",
+  "gender": "male",
+  "lastName": "Belousov",
+  "patient_id": "0586438089",
+  "phoneNumber": "0586438089",
+  "zipCode": "0000"
+},
+{
+  "_id": {
+    "$oid": "6788afd12068429e4a1a0b6e"
+  },
+  "YearOfBirth": "1992",
+  "address": "Kibutz Ramat Yohanan",
+  "city": "Ramat Yohanan",
+  "country": "Israel",
+  "firstName": "Nitzan",
+  "gender": "male",
+  "lastName": "Perez",
+  "patient_id": "0548116865",
+  "phoneNumber": "0548116865",
+  "zipCode": "0000"
+},
+{
+  "_id": {
+    "$oid": "679734a667d4aa6b1858ca54"
+  },
+  "YearOfBirth": "1970",
+  "address": "Kibuts Maagan Michael",
+  "city": "Kibuts Maagan Michael",
+  "country": "Israel",
+  "firstName": "Adi",
+  "gender": "male",
+  "lastName": "Telem",
+  "patient_id": "02498778",
+  "phoneNumber": "0523737646",
+  "zipCode": "0000"
+},
+{
+  "_id": {
+    "$oid": "679737b767d4aa6b1858ca5b"
+  },
+  "YearOfBirth": "1999",
+  "address": "Nesher",
+  "city": "Nesher",
+  "country": "Israel",
+  "firstName": "Dafna",
+  "gender": "female",
+  "lastName": "Perez",
+  "patient_id": "206459992",
+  "phoneNumber": "0545806865",
+  "zipCode": "0000"
+},
+{
+  "_id": {
+    "$oid": "679f1c7867d4aa6b1858cafe"
+  },
+  "YearOfBirth": "1982",
+  "address": "xxx",
+  "city": "Natanya",
+  "country": "Israel",
+  "firstName": "Keti",
+  "gender": "female",
+  "lastName": "Pesachov",
+  "patient_id": "310948088",
+  "phoneNumber": "0559287151",
+  "zipCode": "000"
+},
+{
+  "_id": {
+    "$oid": "679f1dd667d4aa6b1858cb02"
+  },
+  "YearOfBirth": "2003",
+  "address": "Nov 3",
+  "city": "Hadera",
+  "country": "Israel",
+  "firstName": "Mia",
+  "gender": "female",
+  "lastName": "Peer",
+  "patient_id": "325163293",
+  "phoneNumber": "0526362233",
+  "zipCode": "000"
+},
+{
+  "_id": {
+    "$oid": "67c55dfe67d4aa6b1858cbcf"
+  },
+  "YearOfBirth": "2002",
+  "address": "Ashkelon",
+  "city": "Ashkelon",
+  "country": "Israel",
+  "firstName": "Alen",
+  "gender": "male",
+  "lastName": "Krotov",
+  "patient_id": "0547269362",
+  "phoneNumber": "0547269362",
+  "zipCode": "000"
+}]
