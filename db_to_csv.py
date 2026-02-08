@@ -87,6 +87,7 @@ def generate_data(gluk_consideration_range, results, required_filter, sufficient
     gluk_list = []
     id_list = []
     time_list = []
+    date_list = []
 
     for res in results:
         ok = check_filter(res, required_filter, sufficient_filter, exclude_filter)
@@ -96,6 +97,7 @@ def generate_data(gluk_consideration_range, results, required_filter, sufficient
                 continue
             f = res['FREQ']
             s = res['scan_data'][-1]
+            d = res['date']
             if {'$numberDouble': '-Infinity'} in s:
                 continue
             id = patient2id(res['patient_id'], patients)
@@ -104,6 +106,7 @@ def generate_data(gluk_consideration_range, results, required_filter, sufficient
             gluk_list.append(gluk)
             tstamp = [res['time'][:2]+':'+res['time'][2:4]+':'+res['time'][4:6]+'-'+ res['time'][-6:-4] + '-'+res['time'][-4:-2]+'-'+res['time'][-2:]]
             time_list.append(tstamp)
+            date_list.append(d)
 
     import pandas as pd
     X = np.array(scan_list)
@@ -118,13 +121,13 @@ def generate_data(gluk_consideration_range, results, required_filter, sufficient
     k = 0
     for s in scan_list:
         measurements.append(np.interp(freq, f, s))
-    return {'SUBJECT_ID': id_list, 'GLUCOSE': gluk_list, 'MEASUREMENT': measurements, 'TIME': time_list}
+    return {'SUBJECT_ID': id_list, 'GLUCOSE': gluk_list, 'MEASUREMENT': measurements, 'TIME': time_list, 'DATE': date_list}
 
 if  __name__ == '__main__':
     fc = 22000
     fs = 8000
     gluk_consideration_range = [50, 250]
-    ANT_ID = '30' # Albert antennas tested: 13, 14, 15, 16 (90deg), 17, 18, 20, 21, 22, 23, 24, 25 (90 deg), 26, 27, 28, 29
+    ANT_ID = '17' # Albert antennas tested: 13, 14, 15, 16 (90deg), 17, 18, 20, 21, 22, 23, 24, 25 (90 deg), 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37
     vf_vector = []
     power = -10
     db_antennas = vna_proc_utils.db_antennas
@@ -141,8 +144,9 @@ if  __name__ == '__main__':
     i = ant_ids.index(ANT_ID)
     ant_name = ant_names[i]
     #required_filter = {'ANT_ID': [ANT_ID], 'date': ['240725'], 'patient_id': ['060471380', '038189916', '029971504']} # all fields must match # Assaf: 060471380 Dia: 038189916, Yaarit: 029971504, Dafna: 206459992, Alen: 0547269362
-    #required_filter = {'ANT_ID': [ANT_ID], 'date': ['010925']} # Use this for time-domain test with Hanna on Sep-1-2025
+    #required_filter = {'ANT_ID': [ANT_ID], 'date': ['010925']} # Use this for time-domain test antenna 22 with Hanna on Sep-1-2025
     required_filter = {'ANT_ID': [ANT_ID]}
+    required_filter['date'] = ['051125'] # add another condition for date
     sufficient_filter = {} # if not empty, one field must match to force inclusion
     #exclude_filter = {'patient_id': ['038189916'], 'date': ['020225']}
     exclude_filter = {'date': ['010925']} # use this for antenna 22 3-patient test
@@ -150,7 +154,9 @@ if  __name__ == '__main__':
     results = generate_data(gluk_consideration_range, results, required_filter, sufficient_filter, exclude_filter, patients)
     header = ['SUBJECT_ID', 'GLUCOSE', 'MEASUREMENT','TIME']
     subject_ids = set(results['SUBJECT_ID'])
+    dates = set(results['DATE'])
     print(f'Subjects IDs: {subject_ids}')
+    print(f'Test dates: {dates}')
     #t = [x[0] for x in results['TIME']]
     #t_str = [str(datetime.strptime(x, '%H:%M:%S-%d-%m-%y').date()) for x in t]
     rows = zip(results['SUBJECT_ID'], results['GLUCOSE'], results['MEASUREMENT'], results['TIME'])

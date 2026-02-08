@@ -39,7 +39,7 @@ def add_additional_data(filename, do_plot, title_str = []):
             k += 1
 
     print(f"Found total {len(reslist)} measurements")
-    t1 = 4
+    t1 = 5 # percentile threshold for good measurements
     if do_plot:
         plt.figure(1)
         plt.hist(qual_list, 50)
@@ -73,7 +73,7 @@ def resonance_predict(filename, measurement_range, valid_only=1, subjects_id=Non
     #return
     w0 = np.array([-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5])
     #res_index = [69, 172, 301]
-    res_index = [79, 316]
+    res_index = [316]
     reson_indx_mat = []
     reson_val_mat = []
     y_change_mat = []
@@ -104,6 +104,7 @@ def resonance_predict(filename, measurement_range, valid_only=1, subjects_id=Non
     reson_val_mat = np.array(reson_val_mat)
     #X = np.hstack((y_change_mat, reson_indx_mat, reson_val_mat))
     X = np.hstack((y_change_mat, reson_indx_mat))
+    #X = reson_indx_mat
     if method == 'Lasso':
         lasso1 = Lasso(alpha=lasso_Alpha, max_iter=10 ** 6)
         lasso1_pipeline = Pipeline([
@@ -128,6 +129,10 @@ def resonance_predict(filename, measurement_range, valid_only=1, subjects_id=Non
     print(f'{method} prediction in ZONE A: {precentage_re}')
     print(f'{method} MARD in range {measurement_range}: {mard_in_range}')
     print(f'Prediction in ZONE A in range: {precentage_re_in_range}')
+
+    #plt.figure()
+    #plt.plot(X, y, 'o')
+
     plt.figure()
     plt.plot(y, y_pred, 'o')
     plt.plot([70, 200], [70 * 0.8, 200 * 0.8], color='black')
@@ -309,6 +314,7 @@ def feature_extract(filename, measurement_range, valid_only=1, lasso_Alpha = Non
         mard_in_range = np.mean(re_in_range)
         precentage_re_in_range = np.mean(re_in_range < 0.2)
         print(f"Performance for subject {sid}")
+        print(f"Total {len(y)} measurements")
         print(f'Lasso prediction MARD: {mard}')
         print(f'Lasso prediction in ZONE A: {precentage_re}')
         print(f'Prediction MARD in range {measurement_range}: {mard_in_range}')
@@ -343,7 +349,7 @@ def feature_extract(filename, measurement_range, valid_only=1, lasso_Alpha = Non
         plt.xlabel("Features")
         plt.ylabel("Importance")
         # Print the coefficients of the Lasso model as a table
-        print(f'Used frequency indices: {list(nonzero_coeffs_ind[0])}')
+        print(f'Used frequency indices: {nonzero_coeffs_ind[0]}')
         print(f'-----------------------------------')
         print()
 

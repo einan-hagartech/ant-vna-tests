@@ -192,4 +192,49 @@
   "patient_id": "0547269362",
   "phoneNumber": "0547269362",
   "zipCode": "000"
+},
+{
+  "_id": {
+    "$oid": "68cfa2754622549a2a56690a"
+  },
+  "YearOfBirth": "1999",
+  "address": "Raanana",
+  "city": "Raanana",
+  "country": "Israel",
+  "firstName": "Eden",
+  "gender": "female",
+  "lastName": "Shatz",
+  "patient_id": "318723947",
+  "phoneNumber": "0545391922",
+  "zipCode": "4310101"
+},
+{
+  "_id": {
+    "$oid": "690714e332ed3f9f04d98e4e"
+  },
+  "YearOfBirth": "3/4/2004",
+  "address": "Meron 3",
+  "city": "Alfei Menashe",
+  "country": "Israel",
+  "firstName": "Omer",
+  "gender": "female",
+  "lastName": "Peleg",
+  "patient_id": "324187194",
+  "phoneNumber": "0528000628",
+  "zipCode": "0000"
+},
+{
+  "_id": {
+    "$oid": "690b004d7af5230a460dd893"
+  },
+  "YearOfBirth": "2004",
+  "address": "Hasharon 6",
+  "city": "Migdal Haemek",
+  "country": "Israel",
+  "firstName": "Lihi",
+  "gender": "female",
+  "lastName": "Shtiglits",
+  "patient_id": "325619419",
+  "phoneNumber": "0509123789",
+  "zipCode": "2304995"
 }]

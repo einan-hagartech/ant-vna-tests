@@ -245,4 +245,60 @@
   "antena_description": "Wide band antenna (Albert) S2V",
   "antena_id": "30",
   "antena_name": "ANT003-S2V"
+},
+{
+  "_id": {
+    "$oid": "68c8fdaec59c72ccc3db2450"
+  },
+  "antena_description": "Wide band antenna (Albert) S1",
+  "antena_id": "31",
+  "antena_name": "ANT003-S1"
+},
+{
+  "_id": {
+    "$oid": "68cf9579c59c72ccc3db24f6"
+  },
+  "antena_description": "Wide band antenna (Albert) S2A",
+  "antena_id": "32",
+  "antena_name": "ANT003-S2A"
+},
+{
+  "_id": {
+    "$oid": "68da202fd9da54c35af3912a"
+  },
+  "antena_description": "Wide band antenna (Albert) S2AV",
+  "antena_id": "33",
+  "antena_name": "ANT003-S2AV"
+},
+{
+  "_id": {
+    "$oid": "68db7379d9da54c35af391dd"
+  },
+  "antena_description": "Wide band antenna (Albert) SF2",
+  "antena_id": "34",
+  "antena_name": "ANT003-SF2"
+},
+{
+  "_id": {
+    "$oid": "68e20bccd9da54c35af39299"
+  },
+  "antena_description": "Wide band antenna (Albert) S3",
+  "antena_id": "35",
+  "antena_name": "ANT003-S3"
+},
+{
+  "_id": {
+    "$oid": "68f5d131b016156e79cd4638"
+  },
+  "antena_description": "Wide band antenna (Albert) DM1",
+  "antena_id": "36",
+  "antena_name": "ANT003-DM1"
+},
+{
+  "_id": {
+    "$oid": "68f720e732ed3f9f04d98ccb"
+  },
+  "antena_description": "Wide band antenna (Albert) D2",
+  "antena_id": "37",
+  "antena_name": "ANT003-D2"
 }]
